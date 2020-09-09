@@ -11,9 +11,10 @@ const LoginForm = () => {
   };
 
   return (
-    <form onSubmit={onSubmit} className="login-form">
-      <label htmlFor="username">
+    <form onSubmit={onSubmit} className="mt-8">
+      <label htmlFor="username" className="block w-full mb-2 box-border">
         <input
+          className="block w-full mb-3 box-border"
           type="text"
           placeholder="Username"
           name="username"
@@ -23,8 +24,9 @@ const LoginForm = () => {
         Username
       </label>
 
-      <label htmlFor="password">
+      <label htmlFor="password" className="block w-full mb-2 box-border">
         <input
+          className="block w-full mb-3 box-border"
           type="password"
           placeholder="Password"
           name="password"
@@ -34,7 +36,9 @@ const LoginForm = () => {
         Password
       </label>
 
-      <button type="submit">Log In</button>
+      <button className="float-right" type="submit">
+        Log In
+      </button>
     </form>
   );
 };

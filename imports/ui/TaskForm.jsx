@@ -14,8 +14,9 @@ const TaskForm = () => {
   };
 
   return (
-    <form className="task-form" onSubmit={onSubmit}>
+    <form className="flex mt-4" onSubmit={onSubmit}>
       <input
+        className="flex-grow"
         type="text"
         placeholder="Type to add new tasks"
         value={text}

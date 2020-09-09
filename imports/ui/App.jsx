@@ -30,16 +30,16 @@ export const App = () => {
 
   if (!user)
     return (
-      <div className="simple-todos-react">
+      <div className="max-w-md mx-auto my-0">
         <LoginForm />
       </div>
     );
 
   return (
-    <div className="simple-todos-react">
+    <div className="max-w-md mx-auto my-0">
       <h1>Todo List ({incompleteTasksCount})</h1>
 
-      <div className="filters">
+      <div className="mb-4">
         <label>
           <input
             type="checkbox"
@@ -50,7 +50,7 @@ export const App = () => {
           Hide completed
         </label>
       </div>
-      <ul className="tasks">
+      <ul className="p-0 m-0 list-none">
         {tasks.map((task) => (
           <Task
             key={task._id}
