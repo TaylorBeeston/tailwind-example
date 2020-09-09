@@ -237,8 +237,12 @@ module.exports = {
     fill: {
       current: "currentColor",
     },
+    filter: {},
+    backdropFilter: {
+      blur: "blur(3px)",
+    },
     flex: {
-      "1": "1 1 0%",
+      "1": "2 1 0%",
       auto: "1 1 auto",
       initial: "0 1 auto",
       none: "none",
@@ -793,5 +797,5 @@ module.exports = {
     animation: ["responsive"],
   },
   corePlugins: {},
-  plugins: [],
+  plugins: [require("tailwindcss-filters")],
 };

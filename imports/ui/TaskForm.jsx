@@ -14,16 +14,24 @@ const TaskForm = () => {
   };
 
   return (
-    <form className="flex mt-4" onSubmit={onSubmit}>
+    <form
+      className="relative mt-4 border border-gray-300 rounded"
+      onSubmit={onSubmit}
+    >
       <input
-        className="flex-grow"
+        className="w-full p-2 text-lg tracking-wide rounded outline-none"
         type="text"
         placeholder="Type to add new tasks"
         value={text}
         onChange={(e) => setText(e.target.value)}
       />
 
-      <button type="submit">Add Task</button>
+      <button
+        className="absolute top-0 right-0 flex items-center justify-center h-full px-2 bg-green-100 border-l border-gray-300 rounded-r"
+        type="submit"
+      >
+        Add Task
+      </button>
     </form>
   );
 };
